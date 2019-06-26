@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>This Example</title>
+  <link rel="stylesheet" href="assets/css/style.css/styles.css">
+</head>
+<body>
+       <div class="header">
+        <h1>Crystals Collector!</h1>
+       </div> 
+
+       <div class="directions">
+           <h2>Here's what you do...</h2>
+           <br>
+           <ul>
+               <li>You'll be given a random number at the beginning of the game.</li>
+               <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+               <li>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</li>
+               <li>The value each crystal is hidden from you until you click on it.</li>
+               <li>Each time the game starts, the game will change the values of each crystal.</li>
+           </ul>
+       </div>
+
+
+        <h2></h2>
+
+        <div>
+            <button id="button-1" class="btn btn-primary number"> <span><img src="assets/images/red crystal.jpeg"></span></button>
+            <button id="button-2" class="btn btn-primary number"><span><img src="assets/images/blue crystal.jpeg"></span></button>
+            <button id="button-3" class="btn btn-primary number"><span><img src="assets/images/yellow crystal.jpeg"></span></button>
+            <button id="button-4" class="btn btn-primary number"><span><img src="assets/images/green crystal.jpeg"></span></button>
+
+            
+            
+        </div>
+        <!-- ramdom number box -->
+        <div id="random-number"> </div>
+        <div><h3>Wins!-</h3></div>
+        <div><h3>Losses:(-</h3></div>
+        <div><h3>Your total score......keep clicking if you dare---</h3></div>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+        //show random number
+         document.getElementById("random-number").textContent = Math.floor(Math.random() * 121 + 19);
+        var randomNum = Math.floor(Math.random() * 121 + 19);
+        
+        var button1 = document.getElementById("button-1");
+        var button2 = document.getElementById("button-2");
+        var button3 = document.getElementById("button-3");
+        var button4 = document.getElementById("button-4");
+        var wins = 0;
+        var losses = 0;
+        var results = function(){
+            $(this.button1 + this.button2 + this.button3 + this.button4);
+            if (randomNum === results){
+            wins++;
+        };
+        };
+        results();
+        button1.dataset.value = Math.floor(Math.random() * 13);
+        button2.dataset.value = Math.floor(Math.random() * 13);
+        button3.dataset.value = Math.floor(Math.random() * 13);
+        button4.dataset.value = Math.floor(Math.random() * 13);
+
+
+        
+        
+        </script>
+      
+
+</body>
+</html>
+
+  

@@ -1,0 +1,22 @@
+*{
+    background-image:  url("beige-tiles.png");}
+
+
+    Body {
+        font-family: 'Georgia', Times, "Times New Roman", serif;
+        padding: 20px;
+        margin-bottom: 20px;
+        color: #333;
+        background: #4285f4;
+    }
+
+
+    h2{
+    
+        font-family: 'Georgia', Times, "Times New Roman", serif;
+        padding: 20px;
+        margin-bottom: 5px;
+        color: #333;
+        background: #4285f4;
+        font-size: 20px;
+    }
